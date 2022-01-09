@@ -1,0 +1,41 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.title-name {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #fff;
+
+  padding-top: 10px;
+}
+
+.title-profession {
+  font-size: 12.8px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #f3bf99;
+}
+
+.title-email {
+  font-size: 10.24px;
+  line-height: 150%;
+
+  text-align: center;
+
+  color: #f5f5f5;
+
+  margin-top: 5px;
+}

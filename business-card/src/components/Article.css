@@ -1,0 +1,16 @@
+.article {
+  word-wrap: break-word;
+  max-width: fit-content;
+  margin: 36px;
+  color: #f5f5f5;
+}
+
+.article h3 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.p {
+  font-size: 10.24px;
+  line-height: 150%;
+}

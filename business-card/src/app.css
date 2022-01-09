@@ -1,0 +1,18 @@
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+
+  padding-top: 15px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  color: #918e9b;
+  background: #161619;
+  border-radius: 10px;
+  padding: 20px 75px;
+}

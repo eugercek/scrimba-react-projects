@@ -1,0 +1,72 @@
+.card {
+  margin: 0 40px;
+
+  display: flex;
+  gap: 30px;
+}
+
+.location-image {
+  width: 125px;
+  height: 168px;
+}
+
+.other {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.icon {
+  width: 7px;
+  height: 9.55px;
+
+  margin-right: 4px;
+}
+.country {
+  font-family: Inter;
+  font-size: 10.24px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+
+  color: #2b283a;
+
+  margin-right: 12px;
+}
+
+a {
+  font-size: 10.24px;
+  line-height: 12px;
+  /* identical to box height */
+
+  text-decoration-line: underline;
+
+  color: #918e9b;
+}
+
+.location-name {
+  margin-top: 7px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #2b283a;
+}
+
+.dates {
+  margin: 0;
+  font-weight: bold;
+  font-size: 10.24px;
+  line-height: 12px;
+}
+
+p {
+  font-size: 10.24px;
+  line-height: 150%;
+  /* or 15px */
+
+  color: #2b283a;
+}

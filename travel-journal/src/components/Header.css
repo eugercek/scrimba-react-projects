@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  background: #f55a5a;
+}
+
+img {
+  width: 24px;
+}
+
+h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.4608px;
+  line-height: 18px;
+
+  letter-spacing: -0.075em;
+
+  color: #fff;
+}

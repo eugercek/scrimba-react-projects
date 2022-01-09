@@ -1,0 +1,12 @@
+.app {
+  width: 550px;
+  height: 704px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  margin-top: 40px;
+}

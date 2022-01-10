@@ -9,6 +9,7 @@ function App() {
   const [gameState, setGameState] = useState("intro");
   const [questions, setQuestions] = useState([]);
   const [selections, setSelections] = useState([]);
+  const [newGame, setNewGame] = useState();
 
   useEffect(() => {
     fetch("https://opentdb.com/api.php?amount=2&category=15&type=multiple")
@@ -17,7 +18,8 @@ function App() {
         setQuestions(data.results);
         setSelections(new Array(data.results).fill(undefined));
       });
-  }, []);
+    setGameState("playing");
+  }, [newGame]);
 
   function startGame() {
     console.log(questions.map((q) => q.correct_answer));
@@ -26,6 +28,11 @@ function App() {
 
   function endGame() {
     setGameState("end");
+  }
+
+  function playAgain() {
+    // Just to trigger
+    setNewGame(true);
   }
 
   // TODO Find better way
@@ -44,7 +51,6 @@ function App() {
         wrong++;
       }
     }
-    debugger;
 
     return {
       correct,
@@ -69,6 +75,7 @@ function App() {
           questions={questions}
           results={getResults()}
           selections={selections}
+          playAgain={playAgain}
         />
       )}
     </div>

@@ -6,6 +6,7 @@ export default function Results({
   questions,
   results: { correct, wrong, empty },
   selections,
+  playAgain,
 }) {
   const elements = questions.map((question, i) => (
     <Question
@@ -23,7 +24,9 @@ export default function Results({
       <h3>
         You scored {correct}/{correct + empty + wrong}
       </h3>
-      <button className="results--button btn-dark">Play again</button>
+      <button className="results--button btn-dark" onClick={playAgain}>
+        Play again
+      </button>
     </main>
   );
 }

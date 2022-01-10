@@ -1,9 +1,16 @@
 import { nanoid } from "nanoid";
-export default function Question({ question, answers, handleClick }) {
-  const elements = answers.map((answer) => (
+import { useState } from "react";
+import "./Question.css";
+
+export default function Question({ question, answers, handleClick, selected }) {
+  const elements = answers.map((answer, i) => (
     <button
-      className="button"
-      onClick={(e) => handleClick(answer)}
+      className={
+        answer !== selected ? "question--button" : "question--button selected"
+      }
+      onClick={(e) => {
+        handleClick(answer);
+      }}
       key={nanoid()}
     >
       {answer}
@@ -14,6 +21,7 @@ export default function Question({ question, answers, handleClick }) {
     <div className="question">
       <h4>{question}</h4>
       <div className="answers">{elements}</div>
+      <hr />
     </div>
   );
 }

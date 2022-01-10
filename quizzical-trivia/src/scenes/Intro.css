@@ -1,0 +1,18 @@
+.intro {
+  color: #293264;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 31.25px;
+  line-height: 37px;
+
+  margin: 0;
+}
+.description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}

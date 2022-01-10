@@ -1,5 +1,6 @@
-import Question from "./components/Question";
+import Question from "../components/Question";
 import { nanoid } from "nanoid";
+import "./Results.css";
 
 export default function Results({
   questions,
@@ -13,12 +14,12 @@ export default function Results({
     />
   ));
   return (
-    <div className="playing">
+    <main className="playing">
       {elements}
       <h3>
         You scored {correct}/{correct + empty + wrong}
       </h3>
-      <button>Play again</button>
-    </div>
+      <button className="results--button btn-dark">Play again</button>
+    </main>
   );
 }

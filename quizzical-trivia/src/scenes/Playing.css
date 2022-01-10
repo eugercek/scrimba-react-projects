@@ -1,0 +1,17 @@
+.playing {
+  display: flex;
+  flex-direction: column;
+}
+
+.playing--button {
+  align-self: center;
+  margin-top: 30px;
+}
+
+hr {
+  border: 0.794239px solid #dbdef0;
+}
+
+.selected {
+  background-color: #d6dbf5;
+}

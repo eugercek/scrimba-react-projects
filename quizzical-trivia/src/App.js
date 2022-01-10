@@ -1,8 +1,8 @@
 import "./App.css";
 import { useState, useEffect } from "react";
-import Intro from "./Intro";
-import Playing from "./Playing";
-import Results from "./Results";
+import Intro from "./scenes/Intro";
+import Playing from "./scenes/Playing";
+import Results from "./scenes/Results";
 
 function App() {
   // There are 3 states: intro -> playing -> end
@@ -61,6 +61,7 @@ function App() {
           questions={questions}
           setSelections={setSelections}
           endGame={endGame}
+          selections={selections}
         />
       )}
       {gameState === "end" && (

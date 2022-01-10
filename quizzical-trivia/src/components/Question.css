@@ -1,0 +1,36 @@
+.question {
+  font-size: 16px;
+  line-height: 19px;
+  color: #293264;
+}
+
+.question--button {
+  border: 1.3px solid #4d5b9e;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+
+  color: #293264;
+
+  padding: 4px 15px;
+  font-family: Karla;
+}
+
+.answers {
+  display: flex;
+  gap: 12px;
+}
+
+hr {
+  border-color: #dbdef0;
+  margin: 15px 0px;
+}
+
+h4 {
+  margin-top: 0px;
+}

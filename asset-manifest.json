@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/scrimba-react-projects/business-card/static/css/main.26dbd2a5.css",
-    "main.js": "/scrimba-react-projects/business-card/static/js/main.575d9eb4.js",
-    "static/media/img.png": "/scrimba-react-projects/business-card/static/media/img.ae2295d7e05b0b791188.png",
-    "index.html": "/scrimba-react-projects/business-card/index.html",
-    "main.26dbd2a5.css.map": "/scrimba-react-projects/business-card/static/css/main.26dbd2a5.css.map",
-    "main.575d9eb4.js.map": "/scrimba-react-projects/business-card/static/js/main.575d9eb4.js.map"
+    "main.css": "/react-scrimba-projects/static/css/main.badb222f.css",
+    "main.js": "/react-scrimba-projects/static/js/main.6d10c9af.js",
+    "index.html": "/react-scrimba-projects/index.html",
+    "main.badb222f.css.map": "/react-scrimba-projects/static/css/main.badb222f.css.map",
+    "main.6d10c9af.js.map": "/react-scrimba-projects/static/js/main.6d10c9af.js.map"
   },
   "entrypoints": [
-    "static/css/main.26dbd2a5.css",
-    "static/js/main.575d9eb4.js"
+    "static/css/main.badb222f.css",
+    "static/js/main.6d10c9af.js"
   ]
 }

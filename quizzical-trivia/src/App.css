@@ -1,7 +1,27 @@
 body {
+  margin: 0;
+  padding: 0;
   background-color: #f5f7fb;
 
   font-family: Karla;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: url("./images/top-right.png");
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+  right: -100px;
+}
+
+body::after {
+  content: url("./images/bottom-left.png");
+  position: absolute;
+  z-index: -1;
+  bottom: -100px;
+  left: -100px;
 }
 
 button {

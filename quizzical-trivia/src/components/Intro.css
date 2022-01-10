@@ -1,0 +1,43 @@
+.intro {
+  color: #293264;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 31.25px;
+  line-height: 37px;
+
+  margin: 0;
+}
+.description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+button {
+  background: #4d5b9e;
+  border-radius: 15px;
+  padding: 16px 28px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #f5f7fb;
+  border: 0px;
+  outline: 0px;
+
+  height: 53px;
+  width: 193px;
+}

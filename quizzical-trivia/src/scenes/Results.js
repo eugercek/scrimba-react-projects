@@ -5,12 +5,16 @@ import "./Results.css";
 export default function Results({
   questions,
   results: { correct, wrong, empty },
+  selections,
 }) {
   const elements = questions.map((question, i) => (
     <Question
       key={nanoid()}
       question={question.question}
       answers={[question.correct_answer, ...question.incorrect_answers]}
+      selected={selections[i]}
+      correct_answer={question.correct_answer}
+      isResult={true}
     />
   ));
   return (

@@ -65,7 +65,11 @@ function App() {
         />
       )}
       {gameState === "end" && (
-        <Results questions={questions} results={getResults()} />
+        <Results
+          questions={questions}
+          results={getResults()}
+          selections={selections}
+        />
       )}
     </div>
   );

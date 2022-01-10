@@ -1,6 +1,8 @@
 import { nanoid } from "nanoid";
-import { useState } from "react";
 import "./Question.css";
+
+const decode = (string) =>
+  string.replaceAll("&quot;", '"').replaceAll("&#039;", "'");
 
 export default function Question({
   question,
@@ -35,13 +37,12 @@ export default function Question({
       }}
       key={nanoid()}
     >
-      {answer}
+      {decode(answer)}
     </button>
   ));
-
   return (
     <div className="question">
-      <h4>{question}</h4>
+      <h4>{decode(question)}</h4>
       <div className="answers">{elements}</div>
       <hr />
     </div>

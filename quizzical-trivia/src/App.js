@@ -12,13 +12,13 @@ function App() {
   const [newGame, setNewGame] = useState();
 
   useEffect(() => {
-    fetch("https://opentdb.com/api.php?amount=2&category=15&type=multiple")
+    fetch("https://opentdb.com/api.php?amount=5")
       .then((resp) => resp.json())
       .then((data) => {
         setQuestions(data.results);
         setSelections(new Array(data.results).fill(undefined));
       });
-    setGameState("playing");
+    setGameState("intro");
   }, [newGame]);
 
   function startGame() {

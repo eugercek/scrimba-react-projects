@@ -1,25 +1,24 @@
 import Question from "./components/Question";
 import { nanoid } from "nanoid";
 
-export default function Playing({ questions, setSelections, endGame }) {
+export default function Results({
+  questions,
+  results: { correct, wrong, empty },
+}) {
   const elements = questions.map((question, i) => (
     <Question
       key={nanoid()}
       question={question.question}
       answers={[question.correct_answer, ...question.incorrect_answers]}
-      handleClick={(answer) =>
-        setSelections((prev) => {
-          const old = [...prev];
-          old[i] = answer;
-          return old;
-        })
-      }
     />
   ));
   return (
     <div className="playing">
       {elements}
-      <button onClick={endGame}>Check answers</button>
+      <h3>
+        You scored {correct}/{correct + empty + wrong}
+      </h3>
+      <button>Play again</button>
     </div>
   );
 }

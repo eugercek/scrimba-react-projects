@@ -1,6 +1,11 @@
+import { nanoid } from "nanoid";
 export default function Question({ question, answers, handleClick }) {
   const elements = answers.map((answer) => (
-    <button className="button" onClick={handleClick}>
+    <button
+      className="button"
+      onClick={(e) => handleClick(answer)}
+      key={nanoid()}
+    >
       {answer}
     </button>
   ));

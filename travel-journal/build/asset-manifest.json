@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "./static/css/main.2875c11a.css",
+    "main.js": "./static/js/main.435ddab8.js",
+    "static/media/Norway.png": "./static/media/Norway.2488b846522297029b4e.png",
+    "static/media/Australia.png": "./static/media/Australia.3763fbd4216d2c322d5a.png",
+    "static/media/Japan.png": "./static/media/Japan.10ff067ecd97eb859f6f.png",
+    "index.html": "./index.html",
+    "main.2875c11a.css.map": "./static/css/main.2875c11a.css.map",
+    "main.435ddab8.js.map": "./static/js/main.435ddab8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2875c11a.css",
+    "static/js/main.435ddab8.js"
+  ]
+}

@@ -13,7 +13,6 @@ export default function Card({
 }) {
   const image = require(`../images/${img}`);
   const mapsUrl = `${GOOGLE_MAPS_URL}${place.split(" ").join("+")}`;
-  console.log(mapsUrl);
   return (
     <div className="card">
       <img src={image} alt="" className="location-image" />

@@ -1,0 +1,83 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  overflow: hidden;
+
+  font-family: "Karla" sans-serif;
+
+  color: #2b2838;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+aside {
+  margin: 100px 0px;
+  margin-left: -50px;
+  align-self: flex-start;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover::marker {
+  content: "🖱️";
+}
+
+a {
+  text-decoration: none;
+  font-family: "Karla";
+  font-size: 28px;
+  color: #2b2838;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+/* My first "trick" in css :) */
+a:hover {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+}
+
+iframe {
+  border-radius: 5px;
+  overflow: hidden;
+  background: none;
+}
+
+iframe .business-card {
+  width: 400px;
+  height: 900px;
+}
+
+iframe .travel-journal {
+  width: 600px;
+  height: 800px;
+}
+
+iframe .quizzical-trivia {
+  width: 900px;
+  height: 900px;
+  overflow: hidden;
+}
